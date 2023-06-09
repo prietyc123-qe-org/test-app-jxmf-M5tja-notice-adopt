@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-dxdt
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-afnv-tenant/test-app-jxmf/devfile-sample-python-basic-dxdt@sha256:01ecdbd6d817cc4653bb32c657b285f64b7a0e5465c016a35767e71918cfc8f1
+        name: my-python
+        resources: {}
+status: {}
